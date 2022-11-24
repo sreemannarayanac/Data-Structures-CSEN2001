@@ -1,3 +1,4 @@
 ./main.sh
 ./replit.nix
 ./*.replit
+*a.out
