@@ -24,9 +24,9 @@ This repository contains source codes of some concepts I covered while learning 
 ### Unit 2
 Creation of 
 <ol>
-  <li>Singly linked list</li>
-  <li>Doubly linked list</li>
-  <li>Circular linked list</li>
+  <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/linkedList.c">Singly linked list</a></li>
+  <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/doublyLinkedList.c">Doubly linked list</a></li>
+  <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/circularLinkedList.c">Circular linked list</a></li>
 </ol>
 And perform the following operations on them
 <ul>
