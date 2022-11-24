@@ -1,4 +1,3 @@
-# Data-Structures *CSEN2001*
 This repository contains source codes of some concepts I covered while learning Data Structures (CSEN2001).
 
 ## Unitwise syllabus
@@ -8,16 +7,16 @@ This repository contains source codes of some concepts I covered while learning 
   <li>Array / List based representation and operations</li>
   <li>Searching</li>
   <ol>
-    <li>Linear Search</li>
-    <li>Binary Search</li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/linearSearch.c">Linear Search</a></li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/binarySearch.c">Binary Search</a></li>
   </ol>
   <li>Sorting</li>
   <ol>
-    <li>Bubble Sort</li>
-    <li>Selection Sort</li>
-    <li>Insertion Sort</li>
-    <li>Merge Sort</li>
-    <li>Quick Sort</li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/bubbleSort.c">Bubble Sort</a></li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/selectionSort.c">Selection Sort</a></li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/insertionSort.c">Insertion Sort</a></li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/mergeSort.c">Merge Sort</a></li>
+    <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/searchingAndSorting/quickSort.c">Quick Sort</a></li>
   </ol>
 </ul>
 
