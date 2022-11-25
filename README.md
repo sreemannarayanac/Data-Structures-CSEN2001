@@ -33,3 +33,38 @@ And perform the following operations on them
   <li>Deletion</li>
   <li>Display</li>
 </ul>
+
+### Unit 3
+<ul>
+  <li><strong>Stacks</strong></li>
+  <ul>
+    <li>Types of representation:</li>
+    <ol>
+      <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/arrayStack.c">Array representation</a></li>
+      <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/linkedStack.c">Linked list representation</a></li>
+    </ol>
+    <li>Applications of stack:</li>
+    <ul>
+      <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/reverseString.c">Reversing of string</a></li>
+      <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/infixPostfix.c">Conversion of Infix expression to Postfix expression</a></li>
+      <li>Conversion of Infix expression to Prefix expression</li>
+      <li>Evaluation of Postfix expression</li>
+    </ul>
+  </ul>
+  
+  <li><strong>Queues</strong></li>
+  <ul>
+    <li>Types of representation:</li>
+    <ol>
+      <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/linearQueue.c">Array representation</a></li>
+      <li>Linked list representation</li>
+    </ol>
+    <li>Types of queues:</li>
+    <ul>
+      <li>Linear Queue</li>
+      <li>Circular Queue</li>
+      <li>Deque (double ended queue)</li>
+      <li>Priority Queue</li>
+    </ul>
+  </ul>
+</ul>
