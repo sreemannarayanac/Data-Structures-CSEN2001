@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct stack{
+struct stack
+{
     int data;
-    struct stack *next;
+    struct stack *prev;
 };
 
 struct stack *top = NULL;
@@ -14,12 +15,12 @@ struct stack *push(struct stack *top, int n)
     new -> data = n;
     if (top==NULL)
     {
-        new -> next = NULL;
+        new -> prev = NULL;
         top = new;
     }
     else
     {
-        new->next = top;
+        new->prev = top;
         top = new;
     }
     return top;
@@ -31,11 +32,11 @@ struct stack *pop(struct stack *top)
     ele = top;
     if (top==NULL)
     {
-        printf("\nEmpty Stack!!!");
+        printf("\nEmpty Stack!!!\n");
     }
     else
     {
-        top = top->next;  // makes top = NULL
+        top = top->prev;  // changes top to previous node
         printf("\nElement popped = %d\n", ele->data);
         free(ele);
     }
@@ -59,54 +60,59 @@ void display(struct stack *top)
     struct stack *temp = top;
     if (top==NULL)
     {
-        printf("\nEmpty Stack!!!");
+        printf("\nEmpty Stack!!!\n");
     }
     else
     {
         while (temp!=NULL)
         {
             printf("\n%d", temp->data);
-            temp = temp->next;
+            temp = temp->prev;
         }
     }
+    printf("\n");
 }
 
 int main(void)
 {
-    int opt, val;
-    do
+  int opt, val;
+  do
+  {
+    printf("\nSelect the operation you want to perform: ");
+    printf("\n1. Push");
+    printf("\n2. Pop");
+    printf("\n3. Peek");
+    printf("\n4. Display");
+    printf("\n5. Stop");
+    printf("\nEnter operation number here: "); scanf("%d", &opt);
+    switch (opt)
     {
-        printf("\nSelect the operation you want to perform: ");
-        printf("\n1. Push");
-        printf("\n2. Pop");
-        printf("\n3. Peek");
-        printf("\n4. Display");
-        printf("\n5. Stop");
-        printf("\nEnter number here: "); scanf("%d", &opt);
-        switch (opt)
+      case 1:
+        printf("\nEnter a value to push: "); scanf("%d", &val);
+        top = push(top, val);
+        break;
+      case 2:
+        top = pop(top);
+        break;
+      case 3:
+        val = peek(top);
+        if (val!=-1)
         {
-            case 1:
-                printf("\nEnter a value to push: "); scanf("%d", &val);
-                top = push(top, val);
-                break;
-            case 2:
-                top = pop(top);
-                break;
-            case 3:
-                val = peek(top);
-                if (val!=-1)
-                {
-                    printf("\nTop element -> %d\n", val);
-                }
-                else
-                {
-                    printf("Empty Stack!!!");
-                }
-                break;
-            case 4:
-                display(top);
-                break;
+            printf("\nTop element -> %d\n", val);
         }
+        else
+        {
+            printf("\nEmpty Stack!!!\n");
+        }
+        break;
+      case 4:
+        display(top);
+        break;
+      case 5:
+        exit(0);
+      default:
+        printf("\nEnter valid operation.\n");
     }
-    while (opt!=5 && opt>0 && opt<6);
+  }
+  while (opt!=5);
 }

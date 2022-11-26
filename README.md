@@ -1,4 +1,5 @@
-This repository contains source codes of some concepts I covered while learning Data Structures (CSEN2001).
+This repository contains source codes of some concepts I covered while learning Data Structures (CSEN2001).  
+If you want to have a quick revision of types of functions, structures and file handling, visit [Basic C](https://sreemannarayana15.notion.site/C-c10ee5c5d03144a3852b74e72d8d8359) notion page prepared by me and my friend.  
 
 ## Unitwise syllabus
 ### Unit 1
@@ -68,3 +69,5 @@ And perform the following operations on them
     </ul>
   </ul>
 </ul>
+<hr>
+For contacting me you can mail me at sreemannarayanac2003@gmail.com or visit my <a href="https://linktr.ee/Sreemannarayana">linktree</a> for my socials.
