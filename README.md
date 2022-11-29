@@ -25,7 +25,7 @@ For Python Notebook click here -> [Searching_and_Sorting](https://github.com/sre
 ### Unit 2
 Creation of 
 <ol>
-  <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/linkedList.c">Singly linked list</a></li>
+  <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/singlyLinkedList.c">Singly linked list</a></li>
   <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/doublyLinkedList.c">Doubly linked list</a></li>
   <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/linkedLists/circularLinkedList.c">Circular linked list</a></li>
 </ol>
