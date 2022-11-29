@@ -3,6 +3,7 @@ If you want to have a quick revision of types of functions, structures and file 
 
 ## Unitwise syllabus
 ### Unit 1
+For Python Notebook click here -> [Searching_and_Sorting](https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/Searching_and_Sorting.ipynb)
 <ul>
   <li>Introduction to data structures</li>
   <li>Array / List based representation and operations</li>
@@ -48,6 +49,7 @@ And perform the following operations on them
     <ul>
       <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/reverseString.c">Reversing of string</a></li>
       <li><a href="https://github.com/sreemannarayanac/Data-Structures-CSEN2001/blob/main/stacksQueues/infixPostfix.c">Conversion of Infix expression to Postfix expression</a></li>
+      <li>Parsing (here, parenthesis check only)</li>
       <li>Conversion of Infix expression to Prefix expression</li>
       <li>Evaluation of Postfix expression</li>
     </ul>
