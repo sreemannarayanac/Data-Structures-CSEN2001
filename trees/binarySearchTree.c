@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 // This is a simple program to create and perform different operations on a binary tree
 
@@ -84,6 +85,60 @@ void postorderTraversal(struct node* Node) {
   }
 }
 
+bool search(int data)
+{
+  node *temp = root;
+  while (temp!=NULL)
+  {
+    if (temp->data == data)
+      return true;
+    else
+    {
+      if (data > temp->data)
+        temp = temp->right;
+      else
+        temp = temp->left;
+    }
+  }
+  return false;
+}
+
+node* minValueNode(struct node* node)
+{
+  struct node* current = node;
+  while (current && current->left != NULL)
+    current = current->left;
+  return current;
+}
+
+node* deleteNode(node *root, int data)
+{
+  if (root == NULL) return root;
+  if (data < root->data)
+   root->left = deleteNode(root->left, data);
+  else if (data > root->data)
+   root->right = deleteNode(root->right, data);
+  else
+  {
+    if (root->left == NULL)
+    {
+     node *temp = root->right;
+     free(root);
+     return temp;
+    }
+    else if (root->right == NULL)
+    {
+     node *temp = root->left;
+     free(root);
+     return temp;
+    }
+    struct node* temp = minValueNode(root->right);
+    root->data = temp->data;
+    root->right = deleteNode(root->right, temp->data);
+  }
+  return root;
+}
+
 int main(void)
 {
   insertNode(3);
@@ -94,6 +149,12 @@ int main(void)
   printf("\n");
   insertNode(0);
   inorderTraversal(root);
+  if (search(8))
+    printf("\nElement is present in the tree\n");
+  else
+    printf("\nElement is not present in the tree\n");
+  deleteNode(root, 11);
+  printf("Tree after deleting node with data = 11\n");
+  inorderTraversal(root);
   printf("\n");
-  postorderTraversal(root);
 }
