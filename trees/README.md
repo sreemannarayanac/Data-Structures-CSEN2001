@@ -79,12 +79,14 @@ Here is an example of a complete binary tree:
 ```
 
 ```
-## Binary Search Tree
-### What is a Binary Search Tree(BST)
-It is a binary tree which follows folowing conditions:  
-1. The left child of a node contains a value less than its parent node's value.
-2. The right child of a node contains a value greater than its parent node's value.
-3. The left and right subtrees of a node are also binary search trees.
+***
+# Binary Search Tree
+## What is a Binary Search Tree(BST)
+It is a binary tree which follows folowing conditions:
+1. Duplicate elements should not be inserted in a BST.
+2. The left child of a node contains a value less than its parent node's value.
+3. The right child of a node contains a value greater than its parent node's value.
+4. The left and right subtrees of a node are also binary search trees.
 Here is an example of a binary serch tree:
 ```
       5
@@ -93,7 +95,54 @@ Here is an example of a binary serch tree:
    / \   \
   2   4   9
 ```
-To delete a node from BST  
-1. If node to be deleted is a leaf node
-2. If node have only one children
-3. If node have two children
+## To delete a node from BST  
+1. If node to be deleted is a leaf node ` simply delete the node as shown below `
+```
+      5
+     / \
+    3   8
+   / \   \
+  2   4   9
+  
+Tree after deleting node 9 from the above tree:
+
+      5
+     / \
+    3   8
+   / \   \
+  2   4   9
+```
+2. If node have only one children ` point the pointer to child and delete the node as shown below `
+```
+      5
+     / \
+    3   8
+   / \   \
+  2   4   9
+
+Tree after deleting node 8 from the above tree:
+
+      5
+     / \
+    3   9
+   / \
+  2   4
+```
+3. If node have two children ` point the pointer to the smallest value of right subtree and delete the node as shown below `
+```
+      6
+     / \
+    5   8
+   / \   \
+  2   4   9
+     /
+    3
+
+Tree after deleting node 5 from the above tree:
+
+      6
+     / \
+    3   8
+   / \   \
+  2   4   9
+```

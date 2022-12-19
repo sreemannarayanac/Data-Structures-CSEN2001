@@ -28,7 +28,7 @@ node *insert(node *root, int data)
   {
     if (data > root->data)
       root->right = insert(root->right, data);
-    else
+    else if (data < root->data)
       root->left = insert(root->left, data);
   }
 
